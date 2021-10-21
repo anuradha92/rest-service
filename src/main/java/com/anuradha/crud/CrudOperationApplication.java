@@ -1,4 +1,4 @@
-package com.anuradha.CRUD_Operation;
+package com.anuradha.crud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

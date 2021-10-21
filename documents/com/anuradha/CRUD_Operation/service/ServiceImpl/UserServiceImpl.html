@@ -6,7 +6,7 @@
 <title>UserServiceImpl</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2021-10-22">
-<meta name="description" content="declaration: package: com.anuradha.CRUD_Operation.service.ServiceImpl, class: UserServiceImpl">
+<meta name="description" content="declaration: package: com.anuradha.crud.service.ServiceImpl, class: UserServiceImpl">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../script-dir/jquery-ui.css" title="Style">
@@ -83,23 +83,23 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.anuradha.CRUD_Operation.service.ServiceImpl</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.anuradha.crud.service.ServiceImpl</a></div>
 <h1 title="Class UserServiceImpl" class="title">Class UserServiceImpl</h1>
 </div>
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">com.anuradha.CRUD_Operation.service.ServiceImpl.UserServiceImpl</div>
+<div class="inheritance">com.anuradha.crud.service.ServiceImpl.UserServiceImpl</div>
 </div>
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></code></dd>
+<dd><code><a href="../UserService.html" title="interface in com.anuradha.crud.service">UserService</a></code></dd>
 </dl>
 <hr>
 <pre>@Service
 public class <span class="typeNameLabel">UserServiceImpl</span>
 extends java.lang.Object
-implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></pre>
+implements <a href="../UserService.html" title="interface in com.anuradha.crud.service">UserService</a></pre>
 </section>
 <section class="summary">
 <ul class="blockList">
@@ -121,7 +121,7 @@ implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_O
 </thead>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../repository/UserRepository.html" title="interface in com.anuradha.CRUD_Operation.repository">UserRepository</a></code></td>
+<td class="colFirst"><code>private <a href="../../repository/UserRepository.html" title="interface in com.anuradha.crud.repository">UserRepository</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#userRepository">userRepository</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -181,22 +181,22 @@ implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_O
 </td>
 </tr>
 <tr class="rowColor" id="i1">
-<td class="colFirst"><code><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a></code></td>
+<td class="colFirst"><code><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUserDetailsById(java.lang.Long)">getUserDetailsById</a></span>&#8203;(java.lang.Long&nbsp;userId)</code></th>
 <td class="colLast">
 <div class="block">This method is used to get user information using user id</div>
 </td>
 </tr>
 <tr class="altColor" id="i2">
-<td class="colFirst"><code><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></span>&#8203;(<a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</code></th>
+<td class="colFirst"><code><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></span>&#8203;(<a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</code></th>
 <td class="colLast">
 <div class="block">This method is use to save user details in db via user repository</div>
 </td>
 </tr>
 <tr class="rowColor" id="i3">
-<td class="colFirst"><code><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateUserDetails(com.anuradha.CRUD_Operation.entity.User)">updateUserDetails</a></span>&#8203;(<a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</code></th>
+<td class="colFirst"><code><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateUserDetails(com.anuradha.CRUD_Operation.entity.User)">updateUserDetails</a></span>&#8203;(<a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</code></th>
 <td class="colLast">
 <div class="block">This method is used to update user details</div>
 </td>
@@ -227,7 +227,7 @@ implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_O
 <section class="detail">
 <h3><a id="userRepository">userRepository</a></h3>
 <div class="memberSignature"><span class="annotations">@Autowired
-</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../repository/UserRepository.html" title="interface in com.anuradha.CRUD_Operation.repository">UserRepository</a></span>&nbsp;<span class="memberName">userRepository</span></div>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../../repository/UserRepository.html" title="interface in com.anuradha.crud.repository">UserRepository</a></span>&nbsp;<span class="memberName">userRepository</span></div>
 </section>
 </li>
 </ul>
@@ -259,11 +259,11 @@ implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_O
 <li class="blockList">
 <section class="detail">
 <h3><a id="saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a></span>&nbsp;<span class="memberName">saveUser</span>&#8203;(<span class="arguments"><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a></span>&nbsp;<span class="memberName">saveUser</span>&#8203;(<span class="arguments"><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</span></div>
 <div class="block">This method is use to save user details in db via user repository</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../UserService.html#saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></code></dd>
+<dd><code><a href="../UserService.html#saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.crud.service">UserService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>user</code> - this is user entity</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -274,11 +274,11 @@ implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_O
 <li class="blockList">
 <section class="detail">
 <h3><a id="getUserDetailsById(java.lang.Long)">getUserDetailsById</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a></span>&nbsp;<span class="memberName">getUserDetailsById</span>&#8203;(<span class="arguments">java.lang.Long&nbsp;userId)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a></span>&nbsp;<span class="memberName">getUserDetailsById</span>&#8203;(<span class="arguments">java.lang.Long&nbsp;userId)</span></div>
 <div class="block">This method is used to get user information using user id</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../UserService.html#getUserDetailsById(java.lang.Long)">getUserDetailsById</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></code></dd>
+<dd><code><a href="../UserService.html#getUserDetailsById(java.lang.Long)">getUserDetailsById</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.crud.service">UserService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>userId</code> - this user id is refered to primary key in user table</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -289,11 +289,11 @@ implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_O
 <li class="blockList">
 <section class="detail">
 <h3><a id="updateUserDetails(com.anuradha.CRUD_Operation.entity.User)">updateUserDetails</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a></span>&nbsp;<span class="memberName">updateUserDetails</span>&#8203;(<span class="arguments"><a href="../../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</span></div>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a></span>&nbsp;<span class="memberName">updateUserDetails</span>&#8203;(<span class="arguments"><a href="../../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</span></div>
 <div class="block">This method is used to update user details</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../UserService.html#updateUserDetails(com.anuradha.CRUD_Operation.entity.User)">updateUserDetails</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></code></dd>
+<dd><code><a href="../UserService.html#updateUserDetails(com.anuradha.CRUD_Operation.entity.User)">updateUserDetails</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.crud.service">UserService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>user</code> - this is user entity</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -308,7 +308,7 @@ implements <a href="../UserService.html" title="interface in com.anuradha.CRUD_O
 <div class="block">This method is used to delete user</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../UserService.html#deleteUserById(java.lang.Long)">deleteUserById</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></code></dd>
+<dd><code><a href="../UserService.html#deleteUserById(java.lang.Long)">deleteUserById</a></code>&nbsp;in interface&nbsp;<code><a href="../UserService.html" title="interface in com.anuradha.crud.service">UserService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>userId</code> - this user id is refered to primary key in user table</dd>
 </dl>

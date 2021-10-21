@@ -6,7 +6,7 @@
 <title>UserController</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2021-10-22">
-<meta name="description" content="declaration: package: com.anuradha.CRUD_Operation.controller, class: UserController">
+<meta name="description" content="declaration: package: com.anuradha.crud.controller, class: UserController">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../script-dir/jquery-ui.css" title="Style">
@@ -83,12 +83,12 @@ loadScripts(document, 'script');</script>
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.anuradha.CRUD_Operation.controller</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.anuradha.crud.controller</a></div>
 <h1 title="Class UserController" class="title">Class UserController</h1>
 </div>
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
-<div class="inheritance">com.anuradha.CRUD_Operation.controller.UserController</div>
+<div class="inheritance">com.anuradha.crud.controller.UserController</div>
 </div>
 <section class="description">
 <hr>
@@ -120,7 +120,7 @@ extends java.lang.Object</pre>
 </thead>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../service/UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></code></td>
+<td class="colFirst"><code>private <a href="../service/UserService.html" title="interface in com.anuradha.crud.service">UserService</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#userService">userService</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -180,22 +180,22 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="rowColor" id="i1">
-<td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&gt;</code></td>
+<td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUserByID(java.lang.Long)">getUserByID</a></span>&#8203;(java.lang.Long&nbsp;userId)</code></th>
 <td class="colLast">
 <div class="block">This method is used to retrive user details using user Id</div>
 </td>
 </tr>
 <tr class="altColor" id="i2">
-<td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></span>&#8203;(<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</code></th>
+<td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></span>&#8203;(<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</code></th>
 <td class="colLast">
 <div class="block">this method is used to save user information</div>
 </td>
 </tr>
 <tr class="rowColor" id="i3">
-<td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateUser(com.anuradha.CRUD_Operation.entity.User)">updateUser</a></span>&#8203;(<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</code></th>
+<td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateUser(com.anuradha.CRUD_Operation.entity.User)">updateUser</a></span>&#8203;(<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</code></th>
 <td class="colLast">
 <div class="block">This method is used to update user details</div>
 </td>
@@ -226,7 +226,7 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="userService">userService</a></h3>
 <div class="memberSignature"><span class="annotations">@Autowired
-</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../service/UserService.html" title="interface in com.anuradha.CRUD_Operation.service">UserService</a></span>&nbsp;<span class="memberName">userService</span></div>
+</span><span class="modifiers">private</span>&nbsp;<span class="returnType"><a href="../service/UserService.html" title="interface in com.anuradha.crud.service">UserService</a></span>&nbsp;<span class="memberName">userService</span></div>
 </section>
 </li>
 </ul>
@@ -259,8 +259,8 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="saveUser(com.anuradha.CRUD_Operation.entity.User)">saveUser</a></h3>
 <div class="memberSignature"><span class="annotations">@PostMapping("/")
-</span><span class="modifiers">public</span>&nbsp;<span class="returnType">org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&gt;</span>&nbsp;<span class="memberName">saveUser</span>&#8203;(<span class="arguments">@RequestBody
-<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</span></div>
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType">org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&gt;</span>&nbsp;<span class="memberName">saveUser</span>&#8203;(<span class="arguments">@RequestBody
+<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</span></div>
 <div class="block">this method is used to save user information</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -274,7 +274,7 @@ extends java.lang.Object</pre>
 <section class="detail">
 <h3><a id="getUserByID(java.lang.Long)">getUserByID</a></h3>
 <div class="memberSignature"><span class="annotations">@GetMapping("/{id}")
-</span><span class="modifiers">public</span>&nbsp;<span class="returnType">org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&gt;</span>&nbsp;<span class="memberName">getUserByID</span>&#8203;(<span class="arguments">@PathVariable("id")
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType">org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&gt;</span>&nbsp;<span class="memberName">getUserByID</span>&#8203;(<span class="arguments">@PathVariable("id")
 java.lang.Long&nbsp;userId)</span></div>
 <div class="block">This method is used to retrive user details using user Id</div>
 <dl>
@@ -290,8 +290,8 @@ java.lang.Long&nbsp;userId)</span></div>
 <h3><a id="updateUser(com.anuradha.CRUD_Operation.entity.User)">updateUser</a></h3>
 <div class="memberSignature"><span class="annotations">@RequestMapping(value="/update",
                 method=PUT)
-</span><span class="modifiers">public</span>&nbsp;<span class="returnType">org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&gt;</span>&nbsp;<span class="memberName">updateUser</span>&#8203;(<span class="arguments">@RequestBody
-<a href="../entity/User.html" title="class in com.anuradha.CRUD_Operation.entity">User</a>&nbsp;user)</span></div>
+</span><span class="modifiers">public</span>&nbsp;<span class="returnType">org.springframework.http.ResponseEntity&lt;<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&gt;</span>&nbsp;<span class="memberName">updateUser</span>&#8203;(<span class="arguments">@RequestBody
+<a href="../entity/User.html" title="class in com.anuradha.crud.entity">User</a>&nbsp;user)</span></div>
 <div class="block">This method is used to update user details</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

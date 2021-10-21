@@ -1,6 +1,6 @@
 com.anuradha.CRUD_Operation
-com.anuradha.CRUD_Operation.controller
-com.anuradha.CRUD_Operation.entity
-com.anuradha.CRUD_Operation.repository
-com.anuradha.CRUD_Operation.service
-com.anuradha.CRUD_Operation.service.ServiceImpl
+com.anuradha.crud.controller
+com.anuradha.crud.entity
+com.anuradha.crud.repository
+com.anuradha.crud.service
+com.anuradha.crud.service.ServiceImpl
