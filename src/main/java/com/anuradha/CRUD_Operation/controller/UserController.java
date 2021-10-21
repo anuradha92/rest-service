@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
- * @Author Anuradha Gunasinghe
- * @Date 2021-10-21
+ * Author Anuradha Gunasinghe
  * This sample for CRUD operation
  * This controller class is used to expose User API
  */
