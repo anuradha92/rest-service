@@ -1,6 +1,0 @@
-com\anuradha\crud\service\UserService.class
-com\anuradha\crud\CrudOperationApplication.class
-com\anuradha\crud\service\ServiceImpl\UserServiceImpl.class
-com\anuradha\crud\controller\UserController.class
-com\anuradha\crud\entity\User.class
-com\anuradha\crud\repository\UserRepository.class
