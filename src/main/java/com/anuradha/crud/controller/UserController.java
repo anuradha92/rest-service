@@ -63,7 +63,7 @@ public class UserController {
      * @return return updated user information
      */
     @RequestMapping(value = "/update", method = RequestMethod.PUT)
-    public ResponseEntity<User> updateUser(@RequestBody User user) {
+    public ResponseEntity<User> updateUserEmail(@RequestBody User user) {
         if (log.isDebugEnabled()) {
             log.debug("Executing updateUser method.");
         }

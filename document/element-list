@@ -1,0 +1,8 @@
+com.anuradha.crud
+com.anuradha.CRUD_Operation
+com.anuradha.crud.configuration
+com.anuradha.crud.controller
+com.anuradha.crud.entity
+com.anuradha.crud.repository
+com.anuradha.crud.service
+com.anuradha.crud.service.ServiceImpl
