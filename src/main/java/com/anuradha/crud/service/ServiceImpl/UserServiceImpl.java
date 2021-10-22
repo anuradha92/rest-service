@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @Slf4j
 public class UserServiceImpl implements UserService {
@@ -34,11 +36,11 @@ public class UserServiceImpl implements UserService {
      * @return return user details
      */
     @Override
-    public User getUserDetailsById(Long userId) {
+    public Optional<User> getUserDetailsById(Long userId) {
         if (log.isDebugEnabled()) {
             log.debug("Executing getUserDetailsById.");
         }
-        return userRepository.getById(userId);
+        return userRepository.findById(userId);
     }
 
     /**
@@ -52,7 +54,7 @@ public class UserServiceImpl implements UserService {
         if (log.isDebugEnabled()) {
             log.debug("Executing updateUserDetails.");
         }
-        User updateUser = userRepository.getById(user.getUserId());
+        User updateUser = userRepository.getById(user.getId());
         updateUser.setEmail(user.getEmail());
         return userRepository.save(updateUser);
     }

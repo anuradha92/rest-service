@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.Optional;
+
 /**
  * Author Anuradha Gunasinghe
  * This sample for CRUD operation
@@ -43,15 +45,15 @@ public class UserController {
      * @return return searched user details
      */
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserByID(@PathVariable("id") Long userId) {
+    public Optional<User> getUserByID(@PathVariable("id") Long userId) {
         if (log.isDebugEnabled()) {
             log.debug("Executing getUserById method.");
         }
-        User userRegistor = userService.getUserDetailsById(userId);
+        Optional<User> userInfo = userService.getUserDetailsById(userId);
         if (log.isDebugEnabled()) {
-            log.debug("save completed.");
+            log.debug("retrive completed.");
         }
-        return new ResponseEntity<>(userRegistor, HttpStatus.OK);
+        return userInfo;
     }
 
     /**
@@ -66,7 +68,7 @@ public class UserController {
             log.debug("Executing updateUser method.");
         }
         User updatedUser = null;
-        if (user.getUserId() != null) {
+        if (user.getId() != null) {
             if (log.isDebugEnabled()) {
                 log.debug("Update user, " + user);
             }
