@@ -1,9 +1,9 @@
 # rest-service
-This project show how to work  CRUD operation with spring boot 
-before run this project need to install 
-postgresql 11
-java 8
-mevan 
+This project show how to work  CRUD operation with spring boot <br>
+before run this project need to install <br>
+postgresql 11<br>
+java 8 <br>
+mevan <br>
 # Setup Application on your local machine  
   1.git clone https://github.com/anuradha92/rest-service.git <br>
   2.cd rest-service<br>
